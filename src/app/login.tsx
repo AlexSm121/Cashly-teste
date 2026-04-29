@@ -16,19 +16,46 @@ import { themas } from "../theme/themes";
 export default function LoginScreen() {
   const router = useRouter();
 
+  const [usuario, setUsuario] = useState(null);
+  const [logado, setLogado] = useState(false);
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [erro, setErro] = useState("");
 
-  const handleLogin = () => {
+  async function loginUser() {
     if (!email || !senha) {
       setErro("Preencha todos os campos");
       return;
     }
 
     setErro("");
-    router.replace("/(tabs)");
-  };
+
+    try {
+      const response = await fetch("http://localhost:8080/usuario/login", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({ email, senha }),
+      });
+
+      if (!response.ok) {
+        setErro("Email ou Senha inválidos");
+        return;
+      }
+
+      const data = await response.json();
+      console.log("Resposta:", data);
+
+      setUsuario(data);
+      setLogado(true);
+
+      router.replace("/(tabs)");
+    } catch (error) {
+      setErro("Erro de conexão" + error);
+    }
+  }
 
   return (
     <View style={styles.container}>
@@ -76,7 +103,7 @@ export default function LoginScreen() {
       </View>
 
       <View style={styles.boxBottom}>
-        <TouchableOpacity style={styles.button} onPress={handleLogin}>
+        <TouchableOpacity style={styles.button} onPress={loginUser}>
           <Text style={styles.textButton}>Entrar</Text>
         </TouchableOpacity>
 

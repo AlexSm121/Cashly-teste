@@ -32,7 +32,7 @@ export default function Index() {
             source={require("../../assets/images/usuario.png")}
             style={styles.icone}
           />
-          <Text style={styles.text}>Olá, Josefa</Text>
+          <Text style={styles.text}>Olá, josefa</Text>
         </View>
         <View>
           <TouchableOpacity onPress={() => router.navigate("/notification")}>
