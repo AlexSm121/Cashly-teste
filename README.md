@@ -1,50 +1,135 @@
-# Welcome to your Expo app 👋
+````markdown
+# 💰 Cashly - Controle Financeiro Personalizado
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Transforme sua vida financeira com um dashboard semanal, categorização inteligente e controle total de receitas e despesas!
 
-## Get started
+---
 
-1. Install dependencies
+## 📑 Índice
 
-   ```bash
-   npm install
-   ```
+- [🚀 Sobre o Cashly](#-sobre-o-cashly)
+- [⭐ Características Principais](#-características-principais)
+- [🧰 Tecnologias Usadas](#-tecnologias-usadas)
+- [⚙️ Começando](#️-começando)
+- [🤝 Contribuição](#-contribuição)
+- [👥 Contribuidores](#-contribuidores)
+- [🔗 Link do Projeto](#-link-do-projeto)
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🚀 Sobre o Cashly
 
-In the output, you'll find options to open the app in a
+O **Cashly** é um aplicativo de finanças pessoais desenvolvido para ajudar você a ter controle total sobre suas receitas e despesas.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Com o Cashly, é possível registrar transações, organizá-las por categoria e visualizar seus gastos por meio de um dashboard semanal, facilitando a compreensão de para onde seu dinheiro está indo e auxiliando na tomada de decisões financeiras mais inteligentes.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## ⭐ Características Principais
 
-When you're ready, run:
+### 📝 Registro de Transações
+Adicione, edite e remova receitas e despesas de forma rápida e intuitiva.
+
+### 📂 Organização por Categoria
+Classifique seus gastos em categorias personalizadas para uma análise mais detalhada.
+
+### 📊 Dashboard Semanal
+Visualize gráficos e estatísticas semanais para identificar padrões de consumo.
+
+### 💡 Insights Financeiros
+Receba dicas e alertas baseados nos seus hábitos financeiros.
+
+### 🔒 Dados Seguros
+Suas informações financeiras ficam protegidas e acessíveis apenas para você.
+
+---
+
+## 🧰 Tecnologias Usadas
+
+### 📱 Frontend Mobile
+- :contentReference[oaicite:0]{index=0}
+- :contentReference[oaicite:1]{index=1}
+- :contentReference[oaicite:2]{index=2}
+
+### ⚙️ Backend
+- :contentReference[oaicite:3]{index=3}
+
+### 🛠️ Ferramentas
+- :contentReference[oaicite:4]{index=4}
+- :contentReference[oaicite:5]{index=5}
+
+---
+
+## ⚙️ Começando
+
+### 📥 Clone o repositório
 
 ```bash
-npm run reset-project
+git clone https://github.com/CodeShakerS1/Cashly.git
+````
+
+### 📂 Acesse a pasta do projeto
+
+```bash
+cd Cashly
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 📦 Instale as dependências
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### ▶️ Inicie o aplicativo
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npx expo start
+```
 
-## Join the community
+### 📱 Execute o aplicativo
 
-Join our community of developers creating universal apps.
+No terminal, escolha uma das opções disponíveis para abrir o aplicativo em:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+* 📱 Expo Go
+* 🤖 Android Emulator
+* 🍎 iOS Simulator
+* 🛠️ Development Build
+
+---
+
+## 🤝 Contribuição
+
+Contribuições são sempre bem-vindas!
+
+Se você tiver sugestões de melhorias, correções de bugs ou novas funcionalidades, fique à vontade para:
+
+1. Fazer um fork do projeto
+2. Criar uma branch para sua feature
+3. Commitar suas alterações
+4. Abrir um Pull Request
+
+---
+
+## 👥 Contribuidores
+
+* [Andressa Andrade](https://github.com/dressaDevv?utm_source=chatgpt.com)
+* [Alexander Emanuel](https://github.com/AlexSm121?utm_source=chatgpt.com)
+* [Joás Fortunato](https://github.com/JoasFortunato?utm_source=chatgpt.com)
+* [João Victor da Silva](https://github.com/joaovsilva18?utm_source=chatgpt.com)
+* [José Elias](https://github.com/eliastk0?utm_source=chatgpt.com)
+* [Mariana Melo](https://github.com/marianameelo?utm_source=chatgpt.com)
+
+---
+
+## 🔗 Link do Projeto
+
+[Cashly no GitHub](https://github.com/CodeShakerS1/Cashly?utm_source=chatgpt.com)
+
+---
+
+## 📄 Licença
+
+Este projeto foi desenvolvido para fins acadêmicos e de aprendizado.
+
+```
+```
