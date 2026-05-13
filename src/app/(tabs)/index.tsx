@@ -16,7 +16,7 @@ import {
 import { useAuth } from "@/src/contexts/auth";
 
 type Dashboard = {
-  categories: { categoryName: string; icon: string; total: number }[];
+  categories: { categoryName: string; icon: any; total: number }[];
   weeklyChart: { day: string; total: number }[];
   totalBalance: number;
   weeklyExpensesTotal: number;
@@ -69,7 +69,7 @@ export default function Index() {
     if (user?.id) {
       DashboardUser();
     }
-  }, [user, week]); // Sempre que week mudar, refaz a requisição
+  }, [user, week]);
 
   if (loading) {
     return <ActivityIndicator size="large" />;
@@ -94,7 +94,9 @@ export default function Index() {
 
       <View style={styles.caixaDinheiro}>
         <Text style={styles.text}>Saldo total</Text>
-        <Text style={styles.text2}>R$ {dashboard?.totalBalance}</Text>
+        <Text style={styles.text2}>
+          R$ {dashboard?.totalBalance.toFixed(2)}
+        </Text>
       </View>
 
       <View style={styles.relacao}>
@@ -146,9 +148,9 @@ export default function Index() {
       <View style={styles.lista}>
         {dashboard?.categories.map((item) => (
           <View key={item.categoryName} style={styles.item}>
-            <MaterialIcons name={item.icon as any} size={18} color="#fff" />
+            <MaterialIcons name={item.icon} size={18} color="#fff" />
             <Text style={styles.nome}>{item.categoryName}</Text>
-            <Text style={styles.valor}>{item.total}</Text>
+            <Text style={styles.valor}>{item.total.toFixed(2)}</Text>
           </View>
         ))}
       </View>
@@ -265,11 +267,16 @@ const styles = StyleSheet.create({
   },
   nome: {
     color: themas.colors.platinium,
+    flex: 1,
+    textAlign: "center",
     marginLeft: 10,
+    alignItems: "center",
   },
   valor: {
     color: themas.colors.platinium,
     fontWeight: "bold",
+    textAlign: "right",
+    minWidth: 40,
   },
   text5: {
     color: themas.colors.platinium,
